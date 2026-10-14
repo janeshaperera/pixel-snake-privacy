@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Pixel Snake: Retro Slither</title>
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --card-bg: #151a23;
+      --border: rgba(255, 255, 255, 0.10);
+      --text: #c9d1d9;
+      --text-muted: #8b949e;
+      --heading: #58a6ff;
+      --accent: #30d158;
+      --badge-bg: #1c2331;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      margin: 0;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      color: var(--accent);
+      margin-top: 0;
+      font-size: 2.1rem;
+      letter-spacing: -0.02em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    h2 {
+      color: var(--heading);
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+    }
+    h3 {
+      color: #e6edf3;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    p, li {
+      font-size: 1rem;
+      color: #b1bac4;
+    }
+    ul {
+      padding-left: 24px;
+      margin-top: 8px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    code {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 0.9em;
+      color: #79c0ff;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--badge-bg);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    a {
+      color: var(--heading);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .card-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .footer {
+      margin-top: 48px;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 18px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="badge">Application: Pixel Snake (Retro Slither) &bull; Package: <code>com.retrogames.pixelsnake</code> &bull; Last Updated: October 14, 2026</div>
+
+    <p>This Privacy Policy describes how <strong>Pixel Snake</strong> ("we", "us", or "our") collects, uses, and protects information when you install and play the <strong>Pixel Snake: Retro Slither</strong> mobile application on Android.</p>
+
+    <h2>1. Summary & Core Privacy Principles</h2>
+    <ul>
+      <li><strong>No Account Required:</strong> You do not need to create an account, register, or provide your name, email address, or phone number to play the game.</li>
+      <li><strong>Local Gameplay Data Only:</strong> All gameplay progress (scores, settings, controls, themes) is stored locally on your device in sandboxed storage. We do not operate external cloud servers or user profiling databases.</li>
+      <li><strong>Standard Google SDKs:</strong> We use official Google SDKs (Google AdMob and Google Play Billing) to deliver ads and process in-app purchases safely and securely.</li>
+      <li><strong>Zero Unnecessary Permissions:</strong> The game requests only standard permissions required for ad display, in-app billing, and optional tactile haptic feedback.</li>
+    </ul>
+
+    <h2>2. Information Stored Locally on Your Device</h2>
+    <p>Pixel Snake saves basic gameplay and preference data locally on your device via Godot's sandboxed storage (<code>user://save_data.json</code>):</p>
+    <ul>
+      <li><strong>High Score:</strong> Your personal best record (numeric).</li>
+      <li><strong>Death Count:</strong> Total completed runs (numeric, used to pace ad frequency).</li>
+      <li><strong>Theme Preference:</strong> Appearance setting (System, Light, or Dark mode).</li>
+      <li><strong>Control Mode Preference:</strong> Input choice (Virtual D-Pad arrows or touch swipe).</li>
+      <li><strong>Haptic Feedback Preference:</strong> Tactile vibration toggle (ON or OFF).</li>
+      <li><strong>Ad-Free Entitlement Status:</strong> Boolean flag indicating whether the one-time "Remove Ads" purchase is active.</li>
+    </ul>
+    <p>This information is stored strictly on your device and is never transmitted to us or any third party.</p>
+
+    <h2>3. Third-Party Services & Network Data Collection</h2>
+    <p>To support free gameplay and optional purchases, the app integrates certified Google services:</p>
+
+    <h3>A. Google AdMob (Advertising)</h3>
+    <p>Pixel Snake displays banner, interstitial, and rewarded video ads served by <strong>Google AdMob</strong>. To serve contextual or personalized advertisements and prevent fraud, Google Mobile Ads SDK may automatically process certain information in compliance with Google Play Data Safety policies, including:</p>
+    <ul>
+      <li><strong>Device Identifiers:</strong> Google Advertising ID (AAID), device model, OS version, carrier, and language.</li>
+      <li><strong>IP Address:</strong> Used to provide coarse (city/country level) location and ensure ad traffic authenticity.</li>
+      <li><strong>Diagnostic & Performance Data:</strong> Ad load performance, crash diagnostics, and impression metrics.</li>
+      <li><strong>Ad Interactions:</strong> Clicks, video view completions, and frequency capping data.</li>
+    </ul>
+    <p>All data handled by Google AdMob is encrypted in transit using HTTPS. For more information on Google's privacy practices and how Google handles user data, visit:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google Uses Information from Sites or Apps that Use Our Services</a></li>
+    </ul>
+
+    <div class="card-box">
+      <strong>Your Advertising Choices (Opt-Out):</strong>
+      <p style="margin: 6px 0 0 0; font-size: 0.95rem;">You can reset or delete your Android Advertising ID at any time through your device settings: <strong>Settings &gt; Google &gt; Ads &gt; Delete advertising ID</strong> (or <em>Reset advertising ID</em>). You may also permanently remove all banner, interstitial, and run-end ads by purchasing the in-game "Remove Ads" option.</p>
+    </div>
+
+    <h3>B. Google Play Billing (In-App Purchases)</h3>
+    <p>Pixel Snake offers an optional, one-time in-app purchase (<code>remove_ads</code>) that disables advertisements. All transactions are securely handled directly by Google Play. We do not collect, view, or retain payment card information, billing addresses, or banking details.</p>
+
+    <h2>4. Android Device Permissions</h2>
+    <p>The application declares and uses the following permissions:</p>
+    <ul>
+      <li><code>android.permission.INTERNET</code>: Enables network access to load AdMob advertisements and verify Google Play purchase licenses.</li>
+      <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Enables AdMob to check whether an active Internet connection is available before requesting ads.</li>
+      <li><code>android.permission.VIBRATE</code>: Drives the physical vibration motor for brief tactile feedback on button taps and game over. This permission does not access, read, or transmit any data.</li>
+    </ul>
+
+    <h2>5. Children's Privacy (COPPA & Families Policy)</h2>
+    <p>Pixel Snake is a general audience retro arcade game rated for Everyone. The app does not knowingly collect, request, or store personally identifiable information from children under the age of 13 (or under 16 in the European Economic Area). Ad requests adhere to Google AdMob's child-directed and family-friendly content controls.</p>
+
+    <h2>6. Data Retention, Control & Deletion</h2>
+    <p>Because all gameplay data is kept locally on your phone, you retain complete control over your data at all times. You can delete all saved records instantly by:</p>
+    <ul>
+      <li>Going to <strong>Settings &gt; Apps &gt; Pixel Snake &gt; Storage &gt; Clear Data</strong>, or</li>
+      <li>Uninstalling the application from your device.</li>
+    </ul>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect operational, legal, or regulatory updates. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
+
+    <h2>8. Contact Information</h2>
+    <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or your data, please contact us at:</p>
+    <p>
+      <strong>Game:</strong> Pixel Snake: Retro Slither<br>
+      <strong>Developer / Publisher:</strong> JBS Labs / Retro Games<br>
+      <strong>Support Email:</strong> <a href="mailto:contact@retrogames.com">contact@retrogames.com</a>
+    </p>
+
+    <div class="footer">
+      &copy; 2026 Pixel Snake. Built with Godot Engine. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
